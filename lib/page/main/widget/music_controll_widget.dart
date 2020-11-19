@@ -70,8 +70,14 @@ class MusicControlWidget extends WidgetState{
               ///list
               Positioned(
                 right: getWidthPx(10),
-                child:Image.asset(ImageHelper.wrapAssetsIcon('icon_song_list'),
-                        width: getWidthPx(60),height: getWidthPx(60),),
+                child:GestureDetector(
+                  onTap: (){
+                    //todo
+
+                  },
+                  child: Image.asset(ImageHelper.wrapAssetsIcon('icon_song_list'),
+                    width: getWidthPx(60),height: getWidthPx(60),),
+                ),
               ),
             ],
           ),
